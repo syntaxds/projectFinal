@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:layout_width="561dp"
+        android:layout_height="283dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/ic_food_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you starving?"
+        android:textColor="#FF4081"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please login to order"
+        android:textColor="#FF4081"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_background"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="45dp"
+            android:contentDescription="User Icon"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Email Id or User Name"
+            android:paddingStart="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#BDBDBD"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_background"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="45dp"
+            android:contentDescription="Lock Icon"
+            android:src="@drawable/baseline_lock_24" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:textColor="#000000"
+            android:textColorHint="#BDBDBD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Now"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF4081"
+        android:onClick="login" />
+
+</LinearLayout>
